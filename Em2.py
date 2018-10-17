@@ -1272,7 +1272,7 @@ def lineBot(op):
                     for target in targets:
                         try:
                             settings["mimic"]["target"][target] = True
-                            line.sendMessage(msg.to,"➠เลียนแบบ สำเร็จ ")
+                            line.sendMessage(msg.to,"➠เลียนแบบ สำเร็จ "
                             break
                         except:
                             line.sendMessage(msg.to,"ผิดพลาด!")
@@ -4452,7 +4452,7 @@ def lineBot(op):
                             pass
                         else:
                             RfuCctv['sidermem'][op.param1] += "\n🔰" + Name
-                            pref=['สวัสดีครับคนอ่าน➠','ตร๊ะ!..เอ๋!!..😝➠','หวัดดีจร้า💖➠','เห็นนะ อิอิ..😝➠','แอบทำมัย? มาคุยกันหน่อย➠','แอบแฟนเล่นหราา💨➠','รู้นะว่าคัยอ่าน👉➠','เล่นซ่อนแอบหรอคร้าบบ👻➠','มาคุยกับเค้าหน่อย➠','นั่นแน่ แอบหราาา➠','จร๊!!.เอ๋!!..➠]
+                            pref=['สวัสดีครับคนอ่าน➠','ตร๊ะ!..เอ๋!!..😝➠','หวัดดีจร้า💖➠','เห็นนะ อิอิ..😝➠','แอบทำมัย? มาคุยกันหน่อย➠','แอบแฟนเล่นหราา💨➠','รู้นะว่าคัยอ่าน👉➠','เล่นซ่อนแอบหรอคร้าบบ👻➠','มาคุยกับเค้าหน่อย➠','นั่นแน่ แอบหราาา➠','จร๊!!.เอ๋!!..➠']
                             sendMessageWithMention(op.param1, op.param2)
                             line.sendMessage(op.param1, str(random.choice(pref)) + '\n❋❋❋')
                             line.sendContact(op.param1, op.param2)
